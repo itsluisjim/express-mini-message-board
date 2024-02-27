@@ -1,5 +1,5 @@
 # Purpose of this project
-- Familiraize myself with creating an Express app
+- Familiarize myself with creating an Express app
 - Understand the project structure
 - Deploying an Node.js App
 - Understand routing in a Express + Node.js app
