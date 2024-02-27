@@ -1,0 +1,74 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+#chat-container {
+  background-color: #f2fafd;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  gap: 1rem;
+  overflow-y: scroll;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+
+  /* only works with chrome, firefox, edge */
+  scrollbar-color: #9cdcee #f2fafd;
+}
+
+
+#chat-container #avatar {
+  font-size: 3rem;
+  font-weight: 600;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+#chat-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 70px;
+  padding: 10px;
+}
+
+#message-info #fullname {
+  margin-bottom: 6px;
+}
+
+#message-info #date {
+  margin: 0;
+  color: lightgray;
+  font-weight: 600;
+}
+
+#message-info #text {
+  width: 350px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#new-msg-btn {
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+}
+
+#github-footer {
+  margin-top: 3rem;
+}
