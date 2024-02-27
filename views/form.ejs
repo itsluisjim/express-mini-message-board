@@ -2,16 +2,43 @@
 <html>
   <head>
     <title>Form</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+    <link rel='stylesheet' href='/stylesheets/form.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <form action="/new" method="post">
-        <input type="text" name="name" id="name">
-        <input type="text" name="message" id="message">
-        <input type="submit" value="Submit">
-    </form>
-  </body>
-  <a href="/">Back to message board</a>
 
+  <body>
+    <div id="left-container">
+      <a href="/" id="home-link" class="blue-txt mulish-ftt">
+        <img src="/images/211686_back_arrow_icon.svg" alt="home back button">
+        Home
+      </a>
+      <h1 class="blue-txt sora-ftt"><%= title %></h1>
+      <form action="/new" method="post" id="form" class="mulish-ftt">
+          <label for="name">First Name:</label>
+          <input type="text" name="firstname" id="firstname">
+          <label for="name">Last Name:</label>
+          <input type="text" name="lastname" id="lastname">
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" maxlength="55"></textarea>
+
+          <div id="form-btns">
+            <input type="reset" value="Clear" class="danger-txt danger-bg mulish-ftt" id="clear-btn">
+            <input type="submit" value="Publish" class="blue-bg mulish-ftt" id="submit-btn">
+          </div>
+      </form>
+
+      <div id="github-footer">
+        <p class="mulish-ftt">itsluisjim</p>
+        <a href="https://github.com/itsluisjim/express-mini-message-board">
+          <img src="/images/favicon-dark.svg" alt="">
+        </a>
+          
+        <p class="mulish-ftt"><script>document.write(new Date().getFullYear())</script></p>
+      </div>
+
+    </div>
+    <div id="right-container"></div>
+
+
+  </body>
 </html>
