@@ -3,20 +3,22 @@ var router = express.Router();
 
 const messages = [
   {
-    text: "Hi there!",
-    user: "Amando",
+    text: "Hi there! Leave a positive message.",
+    first: "Amando",
+    last: "Smith",
     added: new Date()
   },
   {
-    text: "Hello World!",
-    user: "Charles",
+    text: "Don't forget to keep on coding!",
+    first: "Charles",
+    last: "Darwin",
     added: new Date()
   }
 ];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Mini Message Board', messages: messages });
+  res.render('index', { title: 'World Message Board', subheading: 'Share your thoughts with the world', messages: messages });
 });
 
 router.get('/new', function(req, res){
@@ -26,7 +28,8 @@ router.get('/new', function(req, res){
 router.post('/new', function(req, res){
   messages.push({
     text: req.body.message,
-    user: req.body.name,
+    first: req.body.firstname,
+    last: req.body.lastname,
     added: new Date()
   });
 
