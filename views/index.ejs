@@ -3,18 +3,26 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Messages:</p>
-    <ul>
-      <% messages.forEach(function(msg){ %>
-        <li><%= msg.user %></li>
-        <li><%= msg.text %></li>
-        <li><%= msg.added %></li>
-     <% });%>
-    </ul>
-
-    <a href="/new">Write new message</a>
+    <h1 class="sora-ftt blue-txt"><%= title %></h1>
+    <p class="mulish-ftt"><%= subheading %></p>
+    <div id="chat-container">
+        <% messages.forEach(function(msg){ %>
+          <div id="chat-entry">
+            <div class="blue-bg sora-ftt" id="avatar">
+              <%= msg.first[0] %><%= msg.last[0] %>
+            </div>
+            <div id="message-info">
+              <h3 class="blue-txt mulish-ftt" id="fullname"><%= msg.first %> <%= msg.last %></h3>
+              <h6 class="mulish-ftt" id="date"><%= msg.added.toLocaleDateString() %> <%= msg.added.toLocaleTimeString() %></h6>
+              <div class="mulish-ftt" id="text"><%= msg.text %></div>
+            </div>
+          </div>
+       <% }); %>
+    </div>
+    <a href="/new" id="new-msg-btn" class="blue-bg mulish-ftt">Write a message</a>
+    <%- include('footer')%>
   </body>
 </html>
