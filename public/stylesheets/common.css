@@ -1,22 +1,47 @@
 @font-face {
-    font-family: 'Mulish';
-    src: url('../fonts/Mulish-VariableFont_wght.ttf') format('ttf'),  url('../fonts/Mulish-VariableFont_wght.ttf') format('truetype');
-    
-  }
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-VariableFont_wght.ttf") format("ttf"),
+    url("../fonts/Mulish-VariableFont_wght.ttf") format("truetype");
+}
 @font-face {
-    font-family: 'Sora';
-    src: url('../fonts/Sora-VariableFont_wght.ttf') format('ttf'),  url('../fonts/Sora-VariableFont_wght.ttf') format('truetype');
-    
-  }
+  font-family: "Sora";
+  src: url("../fonts/Sora-VariableFont_wght.ttf") format("ttf"),
+    url("../fonts/Sora-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --main-blue: #3ebde0;
+  --light-danger: #fef0f1;
+  --danger: #f22128;
+}
 
 .mulish-ftt {
-    font-family: 'Mulish', 'Times New Roman', Times, serif;
+  font-family: "Mulish", "Times New Roman", Times, serif;
 }
 .sora-ftt {
-    font-family: 'Sora', 'Times New Roman', Times, serif;
+  font-family: "Sora", "Times New Roman", Times, serif;
+}
+
+.blue-txt {
+  color: var(--main-blue);
+}
+.blue-bg {
+  background-color: var(--main-blue);
+  color: #ffffff;
 }
 
 body {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#github-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#github-footer a {
+  display: flex;
+  justify-content: center;
 }
