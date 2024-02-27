@@ -19,22 +19,15 @@
           <label for="name">Last Name:</label>
           <input type="text" name="lastname" id="lastname">
           <label for="message">Message:</label>
-          <textarea name="message" id="message" maxlength="55"></textarea>
+          <textarea name="message" id="message" maxlength="90"></textarea>
 
           <div id="form-btns">
             <input type="reset" value="Clear" class="danger-txt danger-bg mulish-ftt" id="clear-btn">
             <input type="submit" value="Publish" class="blue-bg mulish-ftt" id="submit-btn">
           </div>
       </form>
+      <%- include('footer')%>
 
-      <div id="github-footer">
-        <p class="mulish-ftt">itsluisjim</p>
-        <a href="https://github.com/itsluisjim/express-mini-message-board">
-          <img src="/images/favicon-dark.svg" alt="">
-        </a>
-          
-        <p class="mulish-ftt"><script>document.write(new Date().getFullYear())</script></p>
-      </div>
 
     </div>
     <div id="right-container"></div>
