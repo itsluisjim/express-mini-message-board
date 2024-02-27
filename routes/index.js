@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/new', function(req, res){
-  res.render('form', { title: 'Submit a Message'});
+  res.render('form', { title: 'Share your message with the world'});
 })
 
 router.post('/new', function(req, res){
