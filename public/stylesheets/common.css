@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url('../fonts/Mulish-VariableFont_wght.ttf') format('ttf'),  url('../fonts/Mulish-VariableFont_wght.ttf') format('truetype');
+    
+  }
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/Sora-VariableFont_wght.ttf') format('ttf'),  url('../fonts/Sora-VariableFont_wght.ttf') format('truetype');
+    
+  }
+
+.mulish-ftt {
+    font-family: 'Mulish', 'Times New Roman', Times, serif;
+}
+.sora-ftt {
+    font-family: 'Sora', 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}

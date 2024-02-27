@@ -1,0 +1,107 @@
+:root {
+  --main-blue: #3ebde0;
+  --light-danger: #fef0f1;
+  --danger: #f22128;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5rem;
+  overflow: hidden;
+}
+
+.blue-txt {
+  color: var(--main-blue);
+}
+.blue-bg {
+  background-color: var(--main-blue);
+  color: #ffffff;
+}
+
+.danger-txt {
+  color: var(--danger);
+}
+.danger-bg {
+  background-color: var(--light-danger);
+}
+
+#left-container {
+  height: 100vh;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 5rem 0 5rem;
+}
+
+#home-link {
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form input[type="text"],
+form textarea {
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: none;
+}
+
+form input[name="message"] {
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+
+#form-btns {
+  align-self: flex-end;
+  display: flex;
+  gap: 0.8rem;
+}
+
+#clear-btn,
+#submit-btn {
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  border: none;
+}
+
+#github-footer {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#github-footer a {
+  display: flex;
+  justify-content: center;
+}
+
+#right-container {
+  width: 50%;
+  height: 100vh;
+  background-image: url("/images/pexels-anna-shvets-3943951-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
