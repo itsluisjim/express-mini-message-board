@@ -9,3 +9,7 @@
 # Todo
 1. Improve mobile responsiveness
 2. Add database to hold messages?
+
+
+# Contributions
+Photo by Anna Shvets from Pexels: https://www.pexels.com/photo/person-holding-smartphone-3943951/
